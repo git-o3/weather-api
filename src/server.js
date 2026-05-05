@@ -1,6 +1,11 @@
-import express from "express";
-import axios from "axios";
-import { createClient } from "redis";
-import asyncHandler from "./middleware/asyncHandler";
+import app from "./app.js";
 import dotenv from "dotenv";
+
+dotenv.config();
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`🌬️ Weather API is running on port ${PORT} Chief 🫡`);
+})
 
