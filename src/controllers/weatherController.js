@@ -1,4 +1,4 @@
-import { asyncHandler } from "../middleware/asynHandler.js";
+import { asyncHandler } from "../middleware/asyncHandler.js";
 import * as weatherService from "../services/weatherService.js";
 import * as redisService from "../services/redisService.js";
 
